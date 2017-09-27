@@ -1,0 +1,83 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding-top: 0;
+  background-color: #d4e2cc;
+}
+
+.header {
+  height: 40vh;
+  background-color: red;
+  background-image: url('4.jpg');
+  background-position: bottom right;
+  background-clip: padding-box;
+  text-align: center;
+  h1 {
+    color:#eef2d2;
+  }
+}
+
+.prof-pic {
+  margin-top: 20px;
+  max-width: 175px;
+  max-height: 175px;
+  border-radius: 50%;
+}
+
+.post {
+  background-color: #f1f1f1;
+}
+.btn-default {
+  margin: 0px 5px 0px 5px;
+  float: right;
+}
+
+.well {
+  max-width: 500px;
+  margin: 45px auto;
+}
+
+.navbar-inverse {
+  border-radius: 0%;
+  padding: 0px 70px;
+}
+
+.panel-heading {
+  height: 30px;
+}
+
+.panel {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.glyphicon-trash {
+  color: red;
+}
+
+.glyphicon-pencil {
+  color: blue;
+}
+
+.title {
+  font-family: 'Frijole', cursive;
+  font-size: 42px;
+  color: #4c4416;
+}
+
+.author {
+  font-family: 'Dancing Script', cursive;
+  color: #4c4416;
+}
+
+.content {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 18px;
+}
+
+a {
+  color: black;
+  &:link {
+    text-decoration: none;
+  }
+}
