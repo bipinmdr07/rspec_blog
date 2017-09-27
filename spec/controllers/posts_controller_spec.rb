@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
 
+  # let(:post) { FactoryGirl.create(:post) }
+
   describe "GET #index" do
     it "renders the index template" do
       get :index
@@ -91,6 +93,22 @@ RSpec.describe PostsController, type: :controller do
         put :update, id: post.id, post: FactoryGirl.attributes_for(:post, title: 'New Post', author: 'Larry', content: 'Hi')
         expect(response).to render_template :edit
       end
+    end
+  end
+
+  describe "DELETE #destroy" do
+
+    it "deletes the post" do
+      post = FactoryGirl.create(:post)
+      expect {
+        delete :destroy, id: post.id
+      }.to change(Post, :count).by(-1)
+    end
+
+    it "redirects to root_path" do
+      post = FactoryGirl.create(:post)
+      delete :destroy, id: post.id
+      expect(response).to redirect_to root_path
     end
   end
 
