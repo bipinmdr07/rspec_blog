@@ -5,7 +5,8 @@
       <%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, edit_post_path(post.id), class: 'btn btn-default', 'data-toggle': 'tooltip', 'title': 'Edit' %>
     </div>
     <div class="panel-body">
-      <h2><%= link_to post.title, post_path(post.id), class: 'title' %><span class="author"> by <%= post.author %></span></h2>
+      <h2><%= link_to post.title, post_path(post.id), class: 'title' %><br>
+        <span class="author"> by <%= post.author %></span></h2>
       <p class = 'content'>
         <%= post.content %>
       </p>
