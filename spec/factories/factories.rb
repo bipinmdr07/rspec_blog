@@ -6,5 +6,8 @@ FactoryGirl.define do
     voluptate nostrud et tamen illustriora quibusdam dolor expetendis. Proident quid
     nescius ubi fugiat non vidisse.A legam nescius praetermissum. Est duis veniam
     hic incurreret. Minim ita nam export officia, ingeniis quis vidisse."
+    factory :invalid_post do
+      content "Short content"
+    end
   end
 end
